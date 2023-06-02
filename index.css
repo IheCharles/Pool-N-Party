@@ -1,0 +1,617 @@
+html {
+  height: 100%;
+}
+body {
+  background-image: url(img/background.png);
+  background-size: cover;
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.DimBackground {
+  width: 100%;
+  height: 100%;
+  background: #000;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+header {
+  background-color: transparent;
+  height: 100%;
+}
+
+nav {
+  background-color: transparent;
+  height: 65px;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+navdiv {
+  background-color: white;
+  height: max-content;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 37.5px;
+  display: flex;
+}
+
+#locationpad {
+  background-color: white;
+  height: 500px;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.searchbox {
+  position: relative;
+  width: 150px;
+  background: none;
+  appearance: none;
+  font-size: 11px;
+  line-height: 18px;
+  font-weight: 400;
+
+  color: gray;
+  text-overflow: ellipsis;
+  border: none;
+
+  bottom: 10px;
+  left: 17.5px;
+  outline: none;
+}
+.searchbox:focus {
+  width: 180px;
+  left: 32.5px;
+}
+.searchbox2 {
+  position: relative;
+  width: 115px;
+
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  line-height: 18px;
+  font-weight: 400;
+  color: gray;
+
+  text-decoration: none;
+  border: none;
+  bottom: 10px;
+}
+.searchbox3 {
+  position: relative;
+  width: 115px;
+  background: none;
+  appearance: none;
+  font-size: 11px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #222222;
+  text-overflow: ellipsis;
+  border: none;
+  bottom: 10px;
+  left: 16px;
+  outline: none;
+}
+.searchbox4 {
+  position: relative;
+  width: 115px;
+  height: 65px;
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  line-height: 18px;
+  font-weight: 400;
+  color: gray;
+  background-color: transparent;
+  text-decoration: none;
+  border: none;
+  left: 25px;
+  bottom: 33px;
+}
+.searchbox4:focus {
+  height: 10px;
+  outline: none;
+  bottom: 10px;
+}
+.searchtext {
+  position: relative;
+  color: gray;
+  font-size: 11px;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  text-decoration: none;
+  right: 51px;
+}
+.searchtext2 {
+  position: relative;
+  color: gray;
+  font-size: 11px;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  text-decoration: none;
+  right: 34px;
+}
+
+.location {
+  background-color: white;
+  height: 50px;
+  width: 200px;
+  flex: 1;
+  border-radius: 37.5px;
+  display: inline;
+  text-align: center;
+}
+.divider {
+  border-left: 1px solid #ebebeb;
+  height: 30px;
+  position: relative;
+  margin-left: 1px;
+  margin-right: 1px;
+  top: 10px;
+}
+.location:hover + .divider {
+  border-left: 1px solid white;
+}
+.location:hover {
+  background-color: #ebebeb;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+guest {
+  background-color: white;
+  width: max-content;
+  height: 50px;
+  border-radius: 37.5px;
+  display: flex;
+  flex: 1;
+}
+guest:hover {
+  background-color: #ebebeb;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+guestdiv {
+  background-color: transparent;
+  width: max-content;
+  height: 65px;
+}
+.searchtextguests {
+  color: gray;
+  font-size: 11px;
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  height: 5px;
+  display: block;
+  position: relative;
+  padding-bottom: 7px;
+  left: 25px;
+  text-decoration: none;
+}
+.searchboxguest {
+  width: max-content;
+  background: none;
+  appearance: none;
+  font-size: 11px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #222222;
+  text-overflow: ellipsis;
+  border: none;
+  outline: none;
+  display: block;
+  position: relative;
+  left: 23px;
+  bottom: 2px;
+}
+search {
+  background-color: red;
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  display: inline;
+  position: relative;
+  top: 5px;
+  left: 20px;
+}
+
+start {
+  background-color: transparent;
+  height: 70px;
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding: 35px 0;
+}
+
+mid {
+  background-color: transparent;
+  height: 10px;
+  float: left;
+  width: 50%;
+  display: block;
+  text-align: center;
+  padding: 35px 0;
+  margin-top: 100px;
+}
+.alltext {
+  color: white;
+  font-size: 10px;
+  font-family: "Inter", sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  text-decoration: none;
+  width: min-content;
+  display: inline-block;
+}
+.underline {
+  height: 1px;
+  border: 0;
+  display: block;
+  position: relative;
+  border-radius: 1px;
+  margin-top: 2px;
+
+  margin-left: 50px;
+  width: 0px;
+  border-top: 2px solid #ffffff;
+}
+
+.underline2 {
+  height: 1px;
+  position: relative;
+
+  border-radius: 1.5px;
+  border: 0;
+  margin-top: 2px;
+  margin-left: 7.5px;
+  width: 25px;
+  border-top: 2px solid #ffffff;
+}
+.alltext:hover + .underline2 {
+  animation-name: floating;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.alltext:hover + .underline {  opacity: 0.1;
+  animation-name: floating;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes floating {
+  from {
+    transform: translate(0, 0px);
+    font-weight: 100;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  50% {
+    transform: translate(0, 2px);
+    font-weight: 500;
+    padding-right: -3px;
+    padding-left: -3px;
+  }
+  to {
+    font-weight: 100;
+    padding-right: 0px;
+    padding-left: 0px;
+    transform: translate(0, -0px);
+  }
+}
+
+end {
+  background-color: transparent;
+  height: 70px;
+  float: left;
+  width: 15%;
+}
+
+login {
+  background-color: white;
+  display: block;
+  height: 35px;
+  width: 60px;
+  position: relative;
+  margin-top: 20px;
+  border-radius: 20px;
+  margin-left: 40px;
+}
+login:hover {
+  width: 150px;
+  margin-left: 0px;
+  height: max-content;
+  transition: 0.3s;
+}
+
+.userlogin {
+  display: none;
+  text-decoration: none;
+}
+login:hover .userlogin {
+  display: block;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: black;
+  font-size: 13px;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+
+  transition: 0.3s;
+}
+.userlogin:hover {
+  background-color: #ebebeb;
+}
+
+.pnp {
+  color: black;
+  font-size: 20px;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+}
+button:focus {
+  outline: 0;
+}
+#datepicker {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 350px;
+  background-color: #ffffff;
+  border-radius: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-top: 5px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.6s;
+  display: none;
+  position: relative;
+  right: 0px;
+}
+.datepicker-top {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.month-selector {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+  width: 2.5rem;
+  height: 2.5rem;
+  box-shadow: 0 0 2px 0 rgba(#000, 0.25), 0 0 10px 0 rgba(#000, 0.15);
+}
+.arrow:hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 0.2px solid #ebebeb;
+}
+
+#month-name {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+.datepicker-calendar {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-row-gap: 1rem;
+}
+
+.day,
+.date {
+  justify-self: center;
+}
+.day {
+  color: red;
+  font-size: 0.875em;
+  font-weight: 500;
+  font-size: 10px;
+  justify-self: center;
+  font-family: "Inter", sans-serif;
+}
+.date {
+  border: 0;
+  padding: 0;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  font-size: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  border: 2px solid transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+.date:hover {
+  border: 0;
+  padding: 0;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  border: 2px solid transparent;
+  background-color: transparent;
+  cursor: pointer;
+  border: 0.2px solid red;
+}
+.date:focus {
+  outline: 0;
+  color: white;
+  background-color: red;
+  border: 2px solid red;
+}
+.faded {
+  color: gray;
+}
+.current-day {
+  color: #fff;
+  border-color: red;
+  background-color: red;
+}
+.current-day :focus {
+  background-color: red;
+}
+
+.timepicker {
+  background-color: white;
+  color: #8c8c8c;
+  border: 1px solid #b5b5b5;
+  border-radius: 15px;
+  margin-right: -90px;
+  margin-left: -50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+.clock {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.meridiem {
+  position: absolute;
+  bottom: 5px;
+  width: 32px;
+  height: 32px;
+  background-color: white;
+  line-height: 32px;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.meridiem.selected {
+  background-color: #d6f0f9;
+  color: #6d828c;
+}
+.meridiem.am {
+  left: -10px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+}
+.meridiem.pm {
+  right: -10px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+}
+.bubble {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+}
+.bubble:hover {
+  background-color: rgb(255, 119, 119);
+  color: #ffffff;
+}
+.bubble.selected {
+  color: #d6f0f9;
+  background-color: red;
+}
+.bubble.selected2 {
+  color: #ffffff;
+  background-color: rgb(255, 119, 119);
+}
+.unit {
+  top: 5px;
+  background-color: white;
+}
+.unit.hour {
+  left: 5px;
+}
+.face {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  position: relative;
+}
+.face:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  margin: -3px 0 0 -3px;
+  background-color: red;
+  border-radius: 50%;
+  content: "";
+  display: block;
+}
+.hand {
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  -ms-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  pointer-events: none;
+  background-color: #8c8c8c;
+}
+.hand.hour {
+  margin: -23% 0 0 -2px;
+  padding: 23% 2px 0;
+  border-radius: 2px 2px 0 0;
+}
+.hand.selected {
+  background-color: rgb(255, 102, 102);
+}
+.time {
+  background-color: #f2f2f2;
+}
